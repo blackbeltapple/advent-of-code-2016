@@ -22,6 +22,15 @@ describe('calcBlockDistance()', () => {
   it('is a function', () => {
     expect(calcBlockDistance).to.be.a('function');
   });
+  it('returns a number', () => {
+    expect(calcBlockDistance(route)).to.be.a('number');
+  });
+  it('takes on arg', () => {
+      expect(calcBlockDistance.length).to.equal(1);
+  });
+  it('is a function', () => {
+        expect(calcBlockDistance).to.be.a('function');
+  });
   it('returns correct answer to advent of code', () => {
     expect(calcBlockDistance(route)).to.equal(236);
   });
