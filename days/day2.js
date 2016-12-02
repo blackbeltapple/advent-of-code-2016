@@ -6,7 +6,8 @@ function getCombination (arrayInst) {
   // for every line of instructions
   arrayInst.forEach(function (line) {
     // start at 5
-    var instr = line.split(' ').reduce(function (acc, val, ind, array) {
+    console.log(line.split(''))
+    var instr = line.split('').reduce(function (acc, val, ind, array) {
       // then for each character in the line
       // call move .
       acc = move(acc, val);
